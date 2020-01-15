@@ -15,7 +15,7 @@ export default class EarnWithUs extends Component {
                        message: '',
                        status: false,
                        correctForm:true,
-                       redirect: false }
+                       redirect: true }
         this.handleSubmit=this.handleSubmit.bind(this);
         // this.onChange=this.onChange.bind(this);
         // this.handleChange = this.handleChange.bind(this)
@@ -39,7 +39,7 @@ export default class EarnWithUs extends Component {
             (message) => {
                 console.log(message);
               if (message.state === true) {
-                this.setState({ status: true, message: message.message })
+                this.setState({ status: true,redirect: false, message: message.message })
               }
             })
         } else{
@@ -49,6 +49,7 @@ export default class EarnWithUs extends Component {
     render() {
         return (
             <div id="earnWithUs-page" className="container">
+                {this.state.redirect === false ? <Redirect to="/youritems" /> : ""}
                 {localStorage.token === undefined ? <Redirect to="/signin" /> : "" }
                 <div className="bg">
                     <div className="row">
@@ -73,7 +74,7 @@ export default class EarnWithUs extends Component {
                                             <select id="inputState" className="form-control" onChange={(e) => this.setState({ category: e.target.value })}>
                                                 <option defaultChecked>Category...</option>
                                                 <option>Lehengas</option>
-                                                <option>Designer Dresses</option>
+                                                <option>Designer Dresses</option> 
                                                 <option>Full Suit</option>
                                                 <option>Shalwar And Kameez</option>
                                                 <option>Mobile Phones</option>

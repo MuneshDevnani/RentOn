@@ -21,52 +21,52 @@ export default class Sidebar extends Component {
               <div className="panel-group category-products" id="accordian">{/*category-productsr*/}
                 <div className="panel panel-default">
 								<div className="panel-heading">
-									<h4 className="panel-title"><a href="#">Lehengas</a></h4>
+									<h4 className="panel-title"><Link to="/category?ctg=Lehengas">Lehengas</Link></h4>
 								</div>
                 </div>
                 <div className="panel panel-default">
 								<div className="panel-heading">
-									<h4 className="panel-title"><a href="#">Designer Dresses</a></h4>
+									<h4 className="panel-title"><Link to="/category?ctg=Designer Dresses">Designer Dresses</Link></h4>
 								</div>
                 </div>
                 <div className="panel panel-default">
 								<div className="panel-heading">
-									<h4 className="panel-title"><a href="#">Shalwar And Kameez</a></h4>
+									<h4 className="panel-title"><Link to="/category?ctg=Shalwar And Kameez">Shalwar And Kameez</Link></h4>
 								</div>
                 </div>
                 <div className="panel panel-default">
 								<div className="panel-heading">
-									<h4 className="panel-title"><a href="#">Mobile Phones</a></h4>
+									<h4 className="panel-title"><Link to="/category?ctg=Mobile Phones">Mobile Phones</Link></h4>
 								</div>
                 </div>
                 <div className="panel panel-default">
 								<div className="panel-heading">
-									<h4 className="panel-title"><a href="#">Tablets</a></h4>
+									<h4 className="panel-title"><Link to="/category?ctg=Tablets">Tablets</Link></h4>
 								</div>
                 </div>
                 <div className="panel panel-default">
 								<div className="panel-heading">
-									<h4 className="panel-title"><a href="#">Tractors & Trailers</a></h4>
+									<h4 className="panel-title"><Link to="/category?ctg=Tractors & Trailers">Tractors & Trailers</Link></h4>
 								</div>
                 </div>
                 <div className="panel panel-default">
 								<div className="panel-heading">
-									<h4 className="panel-title"><Link to="/category?ctg=Rickshaw" onClick={this.refresh}>Rickshaw</Link></h4>
+									<h4 className="panel-title"><Link to="/category?ctg=Rickshaw">Rickshaw</Link></h4>
 								</div>
                 </div>
                 <div className="panel panel-default">
 								<div className="panel-heading">
-									<h4 className="panel-title"><a href="#">Trucks</a></h4>
+									<h4 className="panel-title"><Link to="/category?ctg=Trucks">Trucks</Link></h4>
 								</div>
                 </div>
                 <div className="panel panel-default">
 								<div className="panel-heading">
-									<h4 className="panel-title"><a href="#">Buses</a></h4>
+									<h4 className="panel-title"><Link to="/category?ctg=Buses">Buses</Link></h4>
 								</div>
                 </div>
                 <div className="panel panel-default">
 								<div className="panel-heading">
-									<h4 className="panel-title"><Link to="/category?ctg=Cars" onClick={this.refresh}>Cars</Link></h4>
+									<h4 className="panel-title"><Link to="/category?ctg=Cars" >Cars</Link></h4>
 								</div>
                 </div>
                 <div className="panel panel-default">
@@ -81,25 +81,25 @@ export default class Sidebar extends Component {
                   <div id="More" className="panel-collapse collapse">
                     <div className="panel-body">
                       <ul>
-                        <li><a href="#">Houses</a></li>
-                        <li><a href="#">Apartments & Flats</a></li>
-                        <li><a href="#">Portions & Floors</a></li>
-                        <li><a href="#">Shops</a></li>
-                        <li><a href="#">Guest Houses</a></li>
-                        <li><a href="#">Land & Plots</a></li>
-                        <li><a href="#">Vacation Rentals</a></li>
-                        <li><a href="#">Offices</a></li>
-                        <li><a href="#">Computers & Laptops</a></li>
-                        <li><a href="#">LCD & LED</a></li>
-                        <li><a href="#">Cameras</a></li>
-                        <li><a href="#">Games & Entertainment</a></li>
-                        <li><a href="#">Generators & UPS</a></li>
-                        <li><a href="#">Fridges & Freezers</a></li>
-                        <li><a href="#">Washing Machines & Dryers</a></li>
-                        <li><a href="#">Other Electronics</a></li>
-                        <li><a href="#">Motorcycles</a></li>
-                        <li><a href="#">Bicycles</a></li>
-                        <li><a href="#">Scooters</a></li>
+                        <li><Link to="/category?ctg=Houses">Houses</Link></li>
+                        <li><Link to="/category?ctg=Apartments & Flats">Apartments & Flats</Link></li>
+                        <li><Link to="/category?ctg=Portions & Floors">Portions & Floors</Link></li>
+                        <li><Link to="/category?ctg=Shops">Shops</Link></li>
+                        <li><Link to="/category?ctg=Guest Houses">Guest Houses</Link></li>
+                        <li><Link to="/category?ctg=Land & Plots">Land & Plots</Link></li>
+                        <li><Link to="/category?ctg=Vacation Rentals">Vacation Rentals</Link></li>
+                        <li><Link to="/category?ctg=Offices">Offices</Link></li>
+                        <li><Link to="/category?ctg=Computers & Laptops">Computers & Laptops</Link></li>
+                        <li><Link to="/category?ctg=LCD & LED">LCD & LED</Link></li>
+                        <li><Link to="/category?ctg=Cameras">Cameras</Link></li>
+                        <li><Link to="/category?ctg=Games & Entertainment">Games & Entertainment</Link></li>
+                        <li><Link to="/category?ctg=Generators & UPS">Generators & UPS</Link></li>
+                        <li><Link to="/category?ctg=Fridges & Freezers">Fridges & Freezers</Link></li>
+                        <li><Link to="/category?ctg=Washing Machines & Dryers">Washing Machines & Dryers</Link></li>
+                        <li><Link to="/category?ctg=Other Electronics">Other Electronics</Link></li>
+                        <li><Link to="/category?ctg=Motorcycles">Motorcycles</Link></li>
+                        <li><Link to="/category?ctg=Bicycles">Bicycles</Link></li>
+                        <li><Link to="/category?ctg=Scooters">Scooters</Link></li>
                       </ul>
                     </div>
                   </div>

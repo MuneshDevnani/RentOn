@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import {Redirect} from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import Sidebar from '../Components/AccountSidebar';
+
 import app from '../Api/index'
 
 export default class Wishlist extends Component {
@@ -66,8 +67,11 @@ componentDidMount() {
           )
         })}
         </tbody>
-      </table>
+      </table> 
+      
+     <Link to="/earnwithus" ><button type="submit" className="btn btn-primary pull-center"> Add Items</button></Link>         
       </div>
+
     </div>
   </div>
 </section> 

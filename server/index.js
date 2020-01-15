@@ -25,10 +25,6 @@ app.use('/users', userRoutes);
 app.use('/account', accountRoutes);
 app.use('/item', itemsRoutes);
 
-app.get('/', (req,res) => {
-    res.send("It worked dear")
-})
-
 app.use((req,res,next)=>{
     const error =new Error('Not Found');
     error.status=404;

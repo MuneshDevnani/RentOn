@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import app from '../Api/index'
-import {Map, InfoWindow,mapStyles, Marker, GoogleApiWrapper} from 'google-maps-react';
+// import {Map, InfoWindow,mapStyles, Marker, GoogleApiWrapper} from 'google-maps-react';
 
 class Contact extends Component {
   constructor(props){
@@ -10,6 +10,7 @@ class Contact extends Component {
     this.handleform=this.handleform.bind(this);
   }
   handleform() {
+    this.setState({correctForm:true,status: true,message: "Requesting"})
     if(this.state.name !== '' && this.state.email !== '' && this.state.subject !== '' && this.state.yourMessage !== ''){
   app.contact(this.state.name,this.state.email,this.state.subject, this.state.yourMessage,(message) => {
     if(message.state === true) {
@@ -27,7 +28,7 @@ class Contact extends Component {
               <div className="row">    		
                 <div className="col-sm-12">    			   			
                   <h2 className="title text-center">Contact <strong>Us</strong></h2>  
-                  <div id="gmap" class="contact-map">
+                  {/* <div id="gmap" class="contact-map"> */}
                   {/* <Map google={this.props.google} zoom={14}>
  
  <Marker onClick={this.onMarkerClick}
@@ -37,6 +38,7 @@ class Contact extends Component {
      
  </InfoWindow>
 </Map> */}
+{/* <map>
  <Map
           google={this.props.google}
           zoom={17}
@@ -45,7 +47,8 @@ class Contact extends Component {
         >
           <Marker position={{ lat: 25.384702, lng: 68.362615}} />
         </Map>
-					</div>  			    				    				
+        </map>
+					</div>  			    				    				 */}
                 </div>			 		
               </div>    	
               <div className="row">  	
@@ -113,7 +116,7 @@ class Contact extends Component {
         )
     }
 }
-
-export default GoogleApiWrapper({
-  googleMapURL: ("https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyDC-okH9umd6gw0XdDQBsJVo2_iLBkLSEM")
-})(Contact)
+export default Contact
+// export default GoogleApiWrapper({
+//   googleMapURL: ("https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyDC-okH9umd6gw0XdDQBsJVo2_iLBkLSEM")
+// })(Contact)

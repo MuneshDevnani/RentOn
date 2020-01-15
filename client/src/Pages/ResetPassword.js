@@ -18,6 +18,7 @@ export default class ResetPassword extends Component {
         })
     }
     handleform() {
+      if(this.state.password !== '' && this.state.confirmpassword !== ''){
       if(this.state.password === this.state.confirmpassword){
         app.resetPassword(this.token,this.state.password,(message) => {
           if(message === 'Password Updated'){
@@ -27,7 +28,9 @@ export default class ResetPassword extends Component {
       } else{
         this.setState({ status: false, message: "Password Dosen't Matched" })
       }
-
+    }else{
+      this.setState({ status: false, message: "Fields can not be empty" })
+    }
     }
     render() {
         return (

@@ -16,7 +16,7 @@ export default class ForgotPassword extends Component {
       } else{
         app.forgotpassword(this.state.email,(message) => {
             console.log(message);
-            if(message.state == true){
+            if(message.state === true){
                 this.setState({status: true,correctForm:true,message: message.message})  
             } else{
                 this.setState({correctForm:false,status: false,message: message})

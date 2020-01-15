@@ -46,7 +46,6 @@ componentDidMount() {
               </span>
               <p><b>Name: </b> {this.state.accountInfo.firstName} {this.state.accountInfo.lastName}</p>
               <p><b>Phone: </b>+92 {this.state.accountInfo.phone}</p>
-              <p><b>Email: </b> {this.state.accountInfo.email}</p>
             </div>
           </div>
         </div>{/*/product-details*/}

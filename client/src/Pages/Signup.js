@@ -11,6 +11,7 @@ export default class Signup extends Component {
   }
 
   handleform() {
+    if(this.state.email !== '' && this.state.password !== '' && this.state.confirm !== '' ){
     if (this.state.password === this.state.confirm) {
       //Insert fetch() code here
       app.signup(this.state.email, this.state.password,
@@ -27,6 +28,9 @@ export default class Signup extends Component {
     else {
       this.setState({ status: false, message: "Password Dosen't Matched" })
     }
+  }else{
+    this.setState({ status: false, message: "Fields can not be empty" })
+  }
   }
   render() {
     return (
